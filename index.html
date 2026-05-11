@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurityVision - Sistema de Monitoramento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h1>Security<span>Vision</span></h1>
+            <div class="status-panel">
+                <p>Status: <span class="online">● Online</span></p>
+                <p id="current-time">00:00:00</p>
+            </div>
+            <nav>
+                <button onclick="changeLayout(1)">1 Câmera</button>
+                <button onclick="changeLayout(4)">4 Câmeras</button>
+                <button class="alert-btn">🚨 Alerta Geral</button>
+            </nav>
+        </aside>
+
+        <main class="camera-grid" id="camera-grid">
+            <div class="camera-slot">
+                <div class="label">CAM 01 - Entrada Principal</div>
+                <div class="placeholder-video">REC ●</div>
+            </div>
+            <div class="camera-slot">
+                <div class="label">CAM 02 - Estacionamento</div>
+                <div class="placeholder-video">REC ●</div>
+            </div>
+            <div class="camera-slot">
+                <div class="label">CAM 03 - Corredor Norte</div>
+                <div class="placeholder-video">REC ●</div>
+            </div>
+            <div class="camera-slot">
+                <div class="label">CAM 04 - Almoxarifado</div>
+                <div class="placeholder-video">REC ●</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
